@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,500i,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --white:#f1f1f1;
+    --black:#181818;
+    --grey:#4d4d4d;
+    --lGrey:#dbd9d9;
+    --primary:#3498db;
+    --container:calc(100% - 40px);
+}
+::selection {
+    color: var(--white);
+    background: var(--primary);
+  }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--white);
+    position: relative;
+}
+
+.header, .container{
+    padding-left: calc(50% - var(--container) / 2);
+    padding-right: calc(50% - var(--container) / 2);
+}
+.header{
+    position: relative;
+    line-height: 70px;
+    height: 70px;
+    & h1{
+        display: inline;
+        margin: 0;
+        font-family: "Pacifico";
+    }
+    & ul{
+        list-style: none;
+        float: right;
+        margin: 0;  
+        & li{
+            display: inline;
+            padding: 15px 20px;
+            & a{
+                color: var(--black);
+                text-decoration: none;
+                font-family: "Quicksand";
+                font-weight: 500;
+                font-size: 18px;
+                position: relative;
+                z-index: 5;
+                &:hover::after {
+                    content: "";
+                    height: 40%;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0px;
+                    width: 70%;
+                    z-index: 4;
+                    background-color: rgba(52, 152, 219, 0.5);
+                  }
+            }
+        }
+    }
+}
+
+.container{
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 1040px){
+    :root{
+      --container:1000px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .header{
+        background: blue;
+    }
+}
