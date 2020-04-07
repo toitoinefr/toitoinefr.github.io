@@ -240,7 +240,9 @@ scroll-top button:hover {
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 34px;
+  font-family: "Quicksand";
+  font-weight: 700;
 }
 
 .section-line {
@@ -251,7 +253,7 @@ scroll-top button:hover {
 
 .animated-txt {
   line-height: 37px;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .animated-txt .inner {
@@ -259,7 +261,7 @@ scroll-top button:hover {
   border: 0px solid red;
   height: 37px;
   line-height: 37px;
-  font-size: 32px;
+  font-size: 28px;
   overflow: hidden;
   display: inline-block;
 }

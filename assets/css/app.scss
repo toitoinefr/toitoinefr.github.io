@@ -65,7 +65,9 @@
     float: right;
 }
 .section-title{
-    font-size: 32px;
+    font-size: 34px;
+    font-family: "Quicksand";
+    font-weight: 700;
 }
 .section-line{
     width: 75px;
@@ -74,13 +76,13 @@
 }
 .animated-txt{
     line-height: 37px;
-    font-size: 32px;
+    font-size: 28px;
     & .inner {
         position: absolute;
         border: 0px solid red;
         height: 37px;
         line-height: 37px;
-        font-size: 32px;
+        font-size: 28px;
         overflow: hidden;
         display: inline-block;
         & span {
